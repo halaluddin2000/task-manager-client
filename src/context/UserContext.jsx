@@ -1,6 +1,6 @@
 import { useEffect, useState, createContext } from "react";
-import axiosInstance from "../utils/axiosInastance";
 import { API_PATHS } from "../utils/apiPaths";
+import axiosInstance from "../utils/axiosInastance";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const UserContext = createContext();
