@@ -44,8 +44,10 @@ function SideMenu({ activeMenu }) {
             Admin
           </div>
         )}
-        <h5 className="">{user?.name || ""}</h5>
-        <p className="">{user?.email || ""}</p>
+        <h5 className="text-gray-950 font-medium leading-6 mt-3">
+          {user?.name || ""}
+        </h5>
+        <p className="text-[12px] text-gray-500">{user?.email || ""}</p>
       </div>
       {sideMenuData.map((item, index) => (
         <button
@@ -56,7 +58,7 @@ function SideMenu({ activeMenu }) {
               : "")} py-3 px-6 mb-6 cursor-pointer`}
           onClick={() => handleClick(item.path)}
         >
-          <item.icon className="" />
+          <item.icon className="text-xl" />
           {item.label}
         </button>
       ))}
